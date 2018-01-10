@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="base.definition"
+                template="/WEB-INF/layouts/Admin.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/basefragments/_menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="js_css" value="" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+    </definition>
+
+    <definition name="QuanLyLoaiPhong" extends="base.definition">
+        <put-attribute name="title" value="Quản lý loại phòng" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_QuanLyLoaiPhong.jsp" />
+        <put-attribute name="js_css" value="/WEB-INF/basefragments/_QuanLyLoaiPhong_js_css.jsp" />
+    </definition>
+
+    <definition name="QuanLyThietBi" extends="base.definition">
+        <put-attribute name="title" value="Quản lý thiết bị" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_QuanLyThietBi.jsp" />
+        <put-attribute name="js_css" value="/WEB-INF/basefragments/_QuanLyThietBi_js_css.jsp" />
+    </definition>
+
+    <definition name="QuanLyChiTietThietBi" extends="base.definition">
+        <put-attribute name="title" value="Quản lý chi tiết thiết bị" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_QuanLyChiTietThietBi.jsp" />
+        <put-attribute name="js_css" value="/WEB-INF/basefragments/_QuanLyChiTietThietBi_js_css.jsp" />
+    </definition>
+
+    <definition name="QuanLyPhong" extends="base.definition">
+        <put-attribute name="title" value="Quản lý phòng" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_QuanLyPhong.jsp" />
+        <put-attribute name="js_css" value="/WEB-INF/basefragments/_QuanLyPhong_js_css.jsp" />
+    </definition>
+
+    <definition name="DatPhongOffline" extends="base.definition">
+        <put-attribute name="title" value="Đặt phòng offline" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_DatPhongOffline.jsp" />
+        <put-attribute name="js_css" value="/WEB-INF/basefragments/_DatPhongOffline_js_css.jsp" />
+    </definition>
+</tiles-definitions>

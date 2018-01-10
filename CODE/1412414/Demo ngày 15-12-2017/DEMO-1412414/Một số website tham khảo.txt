@@ -1,0 +1,3 @@
+http://o7planning.org/vi/10201/huong-dan-lap-trinh-java-hibernate-cho-nguoi-moi-bat-dau#a77362
+https://howtodoinjava.com/spring5/webmvc/spring5-mvc-hibernate5-example/
+http://o7planning.org/vi/10401/su-dung-template-trong-spring-mvc-voi-apache-tiles

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Đặt phòng offline</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <!-- font-awesome -->
+    <script src="https://use.fontawesome.com/ad779edd18.js"></script> 	
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Thông tin khách hàng</div>
+                        <div class="panel-body">       
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group form-group-sm">
+                                        <label for="HoTen">Họ tên khách hàng:</label>
+                                        <input type="text" class="form-control" id="HoTen">
+                                        <label for="CMND">Chứng minh nhân dân:</label>
+                                        <input type="number" class="form-control" id="CMND">
+                                        <label for="Email">Email liên lạc:</label>
+                                        <input type="email" class="form-control" id="Email">
+                                        <label for="SDT">Số điện thoại:</label>
+                                        <input type="number" class="form-control" id="SDT">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group form-group-sm">
+                                        <label for="LoaiKH">Loại khách hàng:</label>
+                                        <select class="form-control" id="LoaiKH">
+                                            <option>Công ty</option>
+                                            <option>Cá nhân</option>
+                                        </select>
+                                        <label for="NgaySinh">Ngày sinh:</label>
+                                        <input type="date" class="form-control" id="NgaySinh">
+                                        <label for="GioiTinh">Giới tính: </label>
+                                        <label class="radio-inline"><input type="radio" name="GioiTinh">Nam</label>
+                                        <label class="radio-inline"><input type="radio" name="GioiTinh">Nữ</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group form-group-sm">
+                                        <label for="DiaChi">Địa chỉ:</label>
+                                        <input type="text" class="form-control" id="DiaChi">
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Thông tin đặt phòng</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group form-group-sm">
+                                        <label for="SoNguoi">Số người:</label>
+                                        <input type="number" class="form-control" id="SoNguoi">
+                                        <label for="ThoiGianNhanPhong">Thời gian nhận phòng:</label>
+                                        <input type="date" class="form-control" id="ThoiGianNhanPhong">
+                                        <label for="ThoiGianTraPhong">Thời gian trả phòng:</label>
+                                        <input type="date" class="form-control" id="ThoiGianTraPhong">
+                                        <label for="SoLuongPhong">Số lượng phòng:</label>
+                                        <input type="number" class="form-control" id="SoLuongPhong">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Yêu cầu về phòng 1</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form>
+                                        <div class="col-lg-4">
+                                            <div class="form-group form-group-sm">
+                                                <label for="YeuCauViTri">Vị trí:</label>
+                                                <select class="form-control" id="YeuCauViTri">
+                                                    <option>Gần biển</option>
+                                                    <option>Gần núi</option>
+                                                </select>
+                                                <label for="YeuCauTang">Tầng:</label>
+                                                <input type="number" class="form-control" id="YeuCauTang">
+                                                <label for="YeuCauSoPhong">Số phòng:</label>
+                                                <input type="number" class="form-control" id="YeuCauSoPhong">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group form-group-sm">
+                                                <label for="YeuCauLoaiPhong">Loại phòng:</label>
+                                                <select class="form-control" id="YeuCauLoaiPhong">
+                                                    <option>Bình thường</option>
+                                                    <option>Vip</option>
+                                                </select>
+                                                <label for="YeuCauLoaiGiuong">Loại giường:</label>
+                                                <select class="form-control" id="YeuCauLoaiPhong">
+                                                    <option>Giường đơn</option>
+                                                    <option>Giường kép</option>
+                                                </select>
+                                                <label for="YeuCauSoLuongGiuong">Số lượng giường: </label>
+                                                <label class="radio-inline"><input type="radio" name="optradio">1</label>
+                                                <label class="radio-inline"><input type="radio" name="optradio">2</label>
+                                                <label class="radio-inline"><input type="radio" name="optradio">3</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group form-group-sm">
+                                                <label for="YeuCauGiaNhoNhat">Giá nhỏ nhất:</label>
+                                                <input type="number" class="form-control" id="YeuCauGiaNhoNhat">
+                                                <label for="YeuCauGiaLonNhat">Giá lớn nhất:</label>
+                                                <input type="number" class="form-control" id="YeuCauGiaLonNhat">
+                                            </div>
+                                        </div>   
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Yêu cầu về phòng 2</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form>
+                                        <div class="col-lg-4">
+                                            <div class="form-group form-group-sm">
+                                                <label for="YeuCauViTri">Vị trí:</label>
+                                                <select class="form-control" id="YeuCauViTri">
+                                                    <option>Gần biển</option>
+                                                    <option>Gần núi</option>
+                                                </select>
+                                                <label for="YeuCauTang">Tầng:</label>
+                                                <input type="number" class="form-control" id="YeuCauTang">
+                                                <label for="YeuCauSoLuongPhong">Số lượng phòng:</label>
+                                                <input type="number" class="form-control" id="YeuCauSoLuongPhong">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group form-group-sm">
+                                                <label for="YeuCauLoaiPhong">Loại phòng:</label>
+                                                <select class="form-control" id="YeuCauLoaiPhong">
+                                                    <option>Bình thường</option>
+                                                    <option>Vip</option>
+                                                </select>
+                                                <label for="YeuCauLoaiGiuong">Loại giường:</label>
+                                                <select class="form-control" id="YeuCauLoaiPhong">
+                                                    <option>Giường đơn</option>
+                                                    <option>Giường kép</option>
+                                                </select>
+                                                <label for="YeuCauSoLuongGiuong">Số lượng giường: </label>
+                                                <label class="radio-inline"><input type="radio" name="optradio">1</label>
+                                                <label class="radio-inline"><input type="radio" name="optradio">2</label>
+                                                <label class="radio-inline"><input type="radio" name="optradio">3</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group form-group-sm">
+                                                <label for="YeuCauGiaNhoNhat">Giá nhỏ nhất:</label>
+                                                <input type="number" class="form-control" id="YeuCauGiaNhoNhat">
+                                                <label for="YeuCauGiaLonNhat">Giá lớn nhất:</label>
+                                                <input type="number" class="form-control" id="YeuCauGiaLonNhat">
+                                            </div>
+                                        </div>   
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <button class="btn btn-success">Thêm yêu cầu về phòng</button>
+                    <button class="btn btn-success">Tìm phòng</button>
+                </div>
+            </div>
+            <hr class="soft clr"/>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">Thông tin các phòng</div>
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Số phòng</th>
+                                        <th>Giá hiện tại</th>
+                                        <th>Vị trí</th>
+                                        <th>Mô tả phòng</th>
+                                        <th>Tầng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>201</td>
+                                        <td>250.000 VNĐ</td>
+                                        <td>Gần biển</td>
+                                        <td>Phòng sáng sủa, đẹp đẽ</td>
+                                        <td>5</td>
+                                    </tr>
+                                </tbody>
+                                <thead>
+                                    <tr>
+                                        <th>Số lượng giường</th>
+                                        <th>Tên loại phòng</th>
+                                        <th>Mô tả loại phòng</th>
+                                        <th>Loại giường</th>
+                                        <th>Chọn</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Phòng bình thường</td>
+                                        <td>Phòng có phong cách bình thường</td>
+                                        <td>Giường đơn</td>
+                                        <td><button type="button" class="btn btn-success">Chọn</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Số phòng</th>
+                                        <th>Giá hiện tại</th>
+                                        <th>Vị trí</th>
+                                        <th>Mô tả phòng</th>
+                                        <th>Tầng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>202</td>
+                                        <td>255.000 VNĐ</td>
+                                        <td>Gần phố</td>
+                                        <td>Phòng thoáng mát</td>
+                                        <td>9</td>
+                                    </tr>
+                                </tbody>
+                                <thead>
+                                    <tr>
+                                        <th>Số lượng giường</th>
+                                        <th>Tên loại phòng</th>
+                                        <th>Mô tả loại phòng</th>
+                                        <th>Loại giường</th>
+                                        <th>Chọn</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Phòng bình thường</td>
+                                        <td>Phòng có phong cách bình thường</td>
+                                        <td>Giường đơn</td>
+                                        <td><button type="button" class="btn btn-danger">Bỏ chọn</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Đặt phòng</button> 
+        </form>
+    </div>
+</body>
+
+</html>
