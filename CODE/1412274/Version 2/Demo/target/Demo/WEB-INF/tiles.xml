@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="base.definition"
+                template="/WEB-INF/layouts/Admin.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/basefragments/_menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="js_css" value="" />
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />
+    </definition>
+
+    <definition name="QuanLyNhanVien" extends="base.definition">
+        <put-attribute name="title" value="Quản lý nhân viên" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_QuanLyNhanVien.jsp" />
+        <put-attribute name="js_css" value="/WEB-INF/basefragments/_QuanLyNhanVien_js_css.jsp" />
+    </definition>
+
+    <definition name="XemChiTiet" extends="base.definition">
+        <put-attribute name="title" value="Xem chi tiết" />
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_XemChiTiet.jsp" />
+        <put-attribute name="js_css" value="/WEB-INF/basefragments/_XemChiTiet_js_css.jsp" />
+    </definition>
+
+</tiles-definitions>
